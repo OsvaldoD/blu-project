@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+{% block title %} How to transact | standard Bank {% endblock title %}
+{% load static %}
+{% block body %}
+{% include 'includes/services_nav.html' %}
+{% include 'includes/preloader.html' %}
+
+
+ ##### Breadcrumb Area Start #####
+    <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url({% static 'img/bg-img/13.jpg' %});">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content">
+                        <h2>Como Transaccionar?</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                  <li class="breadcrumb-item"><a href="{% url 'bluApp:index' %}"><i class="fa fa-home" aria-hidden="true"></i>
+                                Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Transaccionar</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+ <!--<section class="services-area section-padding-100-0 features-area section-padding-100-0 ">-->
+        <!--<div class="container">-->
+            <!--<div class="row single-features-area mb-100 wow fadeInUp" data-wow-delay="100ms">-->
+                <!--<div class="col-12">-->
+                    <!--&lt;!&ndash; Section Heading &ndash;&gt;-->
+                    <!--<div class="section-heading text-center mb-100">-->
+                        <!--<div class="line"></div>-->
+
+                    <!--</div>-->
+                    <!--<div class="loan-text">-->
+                   <!--<h4> <i class="fa fa-lightbulb-o fa-2x" aria-hidden="true"></i>Sabia que pode pagar salários,-->
+                    <!--serviços e impostos da sua-->
+                    <!--empresa de-->
+                    <!--forma rápida e prática, através das-->
+                    <!--plataformas digitais Standard-->
+                       <!--Bank? <span class="small">aceda ao</span> <a href="https://ibanking.standardbank.co.mz/secured/Login.aspx">NetPlus</a> </h4>-->
+                        <!--<hr id="hr" class="bg-primary">-->
+                        <!--<span class="text-muted">-->
+                   <!--Já pode pagar salários, serviços e os impostos da sua empresa de-->
+                    <!--forma rápida e prática, através das plataformas digitais Standard-->
+                    <!--Bank. Basta aceder ao BOL - Business Online ou ao NetPlus e-->
+                    <!--seguir os passos:-->
+                            <!--</span><br>-->
+                        <!--<div id="list-steps" class="text-muted">-->
+                                <!--1-  Aceda ao Netplus ou Busines On Line.<br><br>-->
+
+                                <!--2 - No menu à esquerda, selecione a operação que deseja realizar.-->
+                                <!--Por exemplo, recarga Credelec.<br><br>-->
+
+                            <!--3 - Escolha a conta de onde deseja debitar o valor, insira o número-->
+                            <!--do contador e o montante que deseja comprar. De seguida, clique-->
+                            <!--no botão “Processar” para confirmar a compra e receber o código-->
+                            <!--da recarga.-->
+                        <!--</div>-->
+                        <!--<br><br>-->
+                        <!--<div class="jue">-->
+                            <!--<h5>-->
+                                <!--<strong class="text-primary">JUE</strong> - Pagamentos de Janela Única a Autoridade Tributaria-->
+                                <!--(Serviços Aduaneiros).<br><br>-->
+                                <!--<strong class="text-primary">Público:</strong>-->
+                                <!--Todos os Clientes particulares e corporativos.<br><br>-->
+                                <!--<strong class="text-primary">Condições de Acesso:</strong><br>-->
+
+                                <!--• Ser titular de uma conta à ordem no Standard Bank;<br>-->
+                                <!--• Aderir ao serviço de Internet Banking, Mobile Banking-->
+                                <!--ou QuiQ (USSD).-->
+                            <!--</h5>-->
+                        <!--</div>-->
+
+
+                <!--</div>-->
+            <!--</div>-->
+
+
+        <!--</div>-->
+        <!--</div>-->
+ <!--</section>-->
+<br>
+<br><br>
+<div class="container">
+ <div class="row">
+    <div class="col-sm">
+      <h4>Transaccione no NetPlus</h4><br>
+        <p>
+           Já pode pagar salários, serviços e os impostos da sua empresa de
+                    forma rápida e prática, através das plataformas digitais Standard
+                    Bank. Basta aceder ao BOL - Business Online ou ao NetPlus e
+                    seguir os passos:<br>
+                    Aceda ao <a href="https://ibanking.standardbank.co.mz/secured/Login.aspx">Netplus</a>
+            <br><br>
+        </p>
+        <a href="#">
+            <span class="text-secondary">Saber Mais</span>
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
+    </div>
+    <div class="col-sm">
+      <h4>Balcão Digital</h4><br>
+        <p>
+           Balcão Digital, que funcionará 24 horas por dia, de modo a permitir acesso rápido e permanente aos serviços do banco.
+            Trata-se de um espaço onde os clientes poderão efectuar todas as transacções de um balcão de atendimento tradicional,
+            mas com maior autonomia e sem a intervenção de operadores do balcão ou gestores bancários.
+        </p>
+         <a href="#">
+            <span class="text-secondary">Saber Mais</span>
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
+    </div>
+    <div class="col-sm">
+      <h4>Trade finance</h4><br>
+        <p>
+            Encontre as melhores soluções que garantem flexibilidade de pagamento
+            aos seus fornecedores e melhor optimizacao do seu fluxo de caixa. Oferecemos:<br>
+
+                     <i class="fa fa-check" aria-hidden="true"></i>
+                     Decontos de factura até 90%<br>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    Grarantias Bancárias<br>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    compra de equipamento
+
+
+
+        </p><br>
+        <a href="#">
+            <span class="text-secondary">Saber Mais</span>
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
+
+    </div>
+  </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+{% include 'includes/footer.html' %}
+
+{% endblock body %}

@@ -1,0 +1,277 @@
+{% extends 'base.html' %}
+{% block title %} Home | Joba la {% endblock title %}
+{% load static %}
+{% block body %}
+{% include 'includes/navbar.html' %}
+{% include 'includes/preloader.html' %}
+{% include 'includes/slides.html' %}
+
+
+
+    <!-- ##### Hero Area End ##### -->
+
+    <!-- ##### Features Area Start ###### -->
+
+
+
+    <section class="features-area section-padding-100-0">
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-features-area mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <!-- Section Heading -->
+                        <div class="section-heading">
+                            <div class="line"></div>
+                            <p>Take look at our</p>
+                            <h2>Our Loans</h2>
+                        </div>
+                        <h6>In vitae nisi aliquam, scelerisque leo a, volutpat sem. Viva mus rutrum dui fermentum eros hendrerit.</h6>
+                        <a href="#" class="btn credit-btn mt-50">Discover</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-features-area mb-100 wow fadeInUp" data-wow-delay="300ms">
+                        <img src="{% static 'img/bg-img/2.jpg' %}" alt="">
+                        <h5>Bank with us</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-features-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+                        <img src="{% static 'img/bg-img/3.jpg' %}" alt="">
+                        <h5>Borow you needs</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-features-area mb-100 wow fadeInUp" data-wow-delay="700ms">
+                        <img src="{% static 'img/bg-img/4.jpg' %}" alt="">
+                        <h5>Grow your money</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Features Area End ###### -->
+    <!-- ##### Business connect area ###### -->
+
+ <section class="cta-area d-flex flex-wrap">
+
+        <!-- Cta Thumbnail -->
+       <div class="cta-content bg-primary">
+            <!-- Section Heading -->
+            <div class="section-heading white " id="busines-conect">
+                <div class="line"></div>
+                <p>Bold desing and beyound</p>
+                <h2>Conecte-se ao maior maior Business social media</h2>
+            </div>
+            <h6>
+               Empresas de sucesso não se tornam bem sucedidas por si mesmas,
+                é preciso uma marca forte, energia em marketing/ vendas e contribuicoes dentro da comunidade esteja por dentro
+                das tendencias de negocio.
+                O nosso espaco Business Connect oferece oportunidade de se conectar com varias empresas que ajudarão a densevolver
+                o seu negocio com a possibilidade de participar das actividades que ocorem na incubadora de negicios sem estar fisicamente.
+            </h6>
+
+        </div>
+        <div class="cta-thumbnail bg-img jarallax" style="background-image: url({% static 'img/bg-img/networking.png' %});"></div>
+
+        <!-- Cta Content -->
+
+    </section>
+
+    <!-- ##### Call To Action Start ###### -->
+    <section class="cta-area d-flex flex-wrap">
+        <!-- Cta Thumbnail -->
+        <div class="cta-thumbnail bg-img jarallax" style="background-image: url({% static 'img/bg-img/5.jpg' %});"></div>
+
+        <!-- Cta Content -->
+        <div class="cta-content bg-primary">
+            <!-- Section Heading -->
+            <div class="section-heading white " id="grat">
+                <div class="line"></div>
+                <p>Bold desing and beyound</p>
+                <h2>Ajudando pequenas empresas como a sua</h2>
+            </div>
+            <h6>
+                Sabia que é possível participar da maior rede de networking com empresas de sucesso que ajudarão a crescer o teu negócio?’’
+                Para isso basta, convidar mais clientes a visitarem a plataforma Stabdardbank PME’s.
+                A cada referencia coleciona pontos e quando atingir 5 pontos ganha uma formação grátis ,na maior incubadora de negócios do País.
+            </h6>
+            <div class="d-flex flex-wrap mt-50">
+
+
+        </div>
+        </div>
+    </section>
+    <!-- ##### Call To Action End ###### -->
+
+
+
+
+    <!-- ##### Services Area Start ###### -->
+    <section class="services-area section-padding-100-0" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Heading -->
+                    <div class="section-heading text-center mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="line"></div>
+                        <p>Take look at our</p>
+                        <h2>Our services</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <!-- Single Service Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="{% url 'bluApp:transact' %}" class="">
+                    <i class="fa fa-bar-chart fa-5x" aria-hidden="true"></i>
+
+                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="400ms">
+
+                        <div class="text">
+
+                            <h5 class="text-dark">Como Transacionar?</h5>
+                            <p>Já pode pagar salários, serviços e os impostos da sua empresa de forma rápida e prática</p>
+                            <br>
+                                <span class="text-secondary"> Ler Mais</span>
+                                <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a  href="{% url 'bluApp:save' %}" class="">
+                    <i class="fa fa-hourglass-end fa-5x " aria-hidden="true"></i>
+
+
+                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="200ms">
+
+                        <div class="text">
+
+                            <h5 class="text-dark">Como Poupar?</h5>
+                            <p>Deposito a prazo
+                            Bilhetes de tesouro
+                                Operações da bolsa de valores
+                            </p>
+                            <br>
+                            <span class="text-secondary">Ler mais</span>
+                            <i class="fa fa-chevron-right " aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Service Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="{% url 'bluApp:aplica_credito' %}" class="">
+                    <i class="fa fa-diamond fa-5x" aria-hidden="true"></i>
+                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="300ms">
+
+                        <div class="text">
+
+                            <h5 class="text-dark">Como Solicitar um emprestimo?</h5>
+                            <p>Precisa de uma Conta Corrente da Empresa para se qualificar.
+                                Os fundos são pagos diretamente na sua conta. A simulação.</p>
+                        <span class="text-secondary">Ler Mais</span>
+                                 <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Service Area -->
+
+
+                </div>
+
+
+
+
+
+
+
+        </div>
+    </section>
+    <!-- ##### Services Area End ###### -->
+
+    <!-- ##### Miscellaneous Area Start ###### -->
+    <section class="miscellaneous-area bg-gray section-padding-100-0" id="about">
+        <div class="container">
+            <div class="row align-items-end justify-content-center">
+                <!-- Add Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="add-area mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <a href="#"><img src="{% static 'img/bg-img/add.png' %}" alt=""></a>
+                    </div>
+                </div>
+
+                <!-- Contact Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="contact--area mb-100 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Section Heading -->
+                        <div class="section-heading mb-50">
+                            <div class="line"></div>
+                            <h2>Entre em contacto</h2>
+                        </div>
+                        <!-- Contact Content -->
+                        <div class="contact-content">
+                            <!-- Single Contact Content -->
+                            <div class="single-contact-content d-flex align-items-center">
+                                <div class="icon">
+                                    <img src="{% static 'img/core-img/location.png' %}" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>Av.10 de Novembro <br> </p>
+                                </div>
+                            </div>
+                            <!-- Single Contact Content -->
+                            <div class="single-contact-content d-flex align-items-center">
+                                <div class="icon">
+                                    <img src="{% static 'img/core-img/call.png'%}" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>+258 21 32 9777</p>
+
+                                </div>
+                            </div>
+                            <!-- Single Contact Content -->
+                            <div class="single-contact-content d-flex align-items-center">
+                                <div class="icon">
+                                    <img src="{% static 'img/core-img/message2.png' %}" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>cliente@standardbank.co.mz</p>
+                                    <span>we reply in 24 hrs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+{% include 'includes/livechat.html'%}
+
+
+    <!-- ##### Miscellaneous Area End ###### -->
+
+
+<!--<script type="text/javascript">function add_chatinline(){var hccid=97421679;var nt=document.createElement("script");nt.async=true;nt.src="https://mylivechat.com/chatinline.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);}-->
+<!--add_chatinline(); </script>-->
+
+
+{% include 'includes/footer.html' %}
+{% endblock body %}

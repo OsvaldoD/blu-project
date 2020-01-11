@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% block title %} How to loan? {% endblock title %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block body %}
+{% include 'includes/preloader.html' %}
+{% include 'includes/services_nav.html' %}
+
+ <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url({% static 'img/bg-img/13.jpg' %});">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content">
+                        <h2>Como Solicitar um emprestimo?</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="{% url 'bluApp:index' %}"><i class="fa fa-home" aria-hidden="true"></i>
+                                Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Emprestimo</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Inicie a sua aplicação de credito</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+        <form method="post">
+      <div class="modal-body">
+               {% csrf_token %}
+            {{ form|crispy }}
+            <button type="submit" class="btn btn-primary form-control">Enviar formulario</button>
+
+
+        </form>
+      </div>
+      <div class="modal-footer">
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <section class="services-area section-padding-100-0 features-area section-padding-100-0 ">
+        <div class="container">
+            <div class="row single-features-area mb-100 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12">
+                    <!-- Section Heading -->
+                    <div class="section-heading text-center mb-100">
+                        <div class="line"></div>
+
+                    </div>
+                    <div class="loan-text">
+                    <h4>Como funciona?</h4>
+                    <ul>
+                        <li>
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                             Você precisa de uma Conta Corrente da Empresa para se qualificar.
+                        </li><br>
+                         <li>
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                             Os fundos são pagos diretamente na sua conta.
+                        </li><br>
+                         <li>
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                             A simulação do valor a financiar é feito com base nos saldos medios.
+
+                        </li>
+                    </ul>
+                        <br>
+                        <h4>Credito flexivel</h4>
+
+
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+
+                             Inicie a sua aplicação de credito<br><br>
+
+                        {% if request.user.is_authenticated %}
+                             <button class="btn credit-btn bg-primary" data-toggle="modal" data-target="#exampleModal" >Iniciar applicacao de aplicação</button>
+                        {% else %}
+
+
+                        <button class="btn credit-btn btn btn-secondary" >Iniciar aplicação de credito</button>
+                        <p class="text-danger">Para inciciar aplicação de credito e necessario fazer <a href="{% url 'user:login' %}">login</a></p>
+                        {% endif %}
+
+
+
+                    </div>
+            </div>
+
+
+        </div>
+        </div>
+ </section>
+
+{% include 'includes/footer.html' %}
+{% endblock body %}

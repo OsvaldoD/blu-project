@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% block title %} How to save {% endblock title %}
+{% load static %}
+{% block body %}
+{% include 'includes/services_nav.html' %}
+
+
+
+<!-- ##### Breadcrumb Area Start ##### -->
+    <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url({% static 'img/bg-img/13.jpg' %});">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content">
+                        <h2>Como Poupar?</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                  <li class="breadcrumb-item"><a href="{% url 'bluApp:index' %}"><i class="fa fa-home" aria-hidden="true"></i>
+                                Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Poupar</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Breadcrumb Area End ##### -->
+
+ <section class="services-area section-padding-100-0 features-area section-padding-100-0 ">
+        <div class="container">
+
+
+<div class="row single-features-area mb-100 wow fadeInUp" data-wow-delay="100ms">
+
+
+    <div class="container" id="save">
+  <div class="row">
+    <div class="col-sm">
+      <h4>Deposito a prazo</h4><br>
+        <p>
+           É a modalidade de depósito na qual o Banco fica obrigado a remunerar periodicamente ao titular uma certa quantia baseada numa
+            taxa de juro e a restituir o capital aplicado no final do período acordado entre as partes.
+        </p>
+        <a href="#">
+            <span class="text-secondary">Saber Mais</span>
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
+    </div>
+    <div class="col-sm">
+      <h4>Bilhetes de tesouro</h4><br>
+        <p>
+            Bilhetes do Tesouro - Para o curto prazo (menos de 1 ano)<br>
+            Obrigações do Tesouro - Para o médio-longo prazo (mais de 1 ano)<br>
+            Outros títulos de dívida pública (por exemplo, certificados de aforro)<br>
+
+        </p>
+         <a href="#">
+            <span class="text-secondary">Saber Mais</span>
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
+    </div>
+    <div class="col-sm">
+      <h4>Operações da bolsa de valores</h4><br>
+        <p>
+            A bolsa de valores é o mercado organizado onde se negociam ações de sociedades de capital aberto (públicas ou privadas)
+            e outros valores mobiliários, tais como as opções.
+
+        </p><br>
+        <a href="#">
+            <span class="text-secondary">Saber Mais</span>
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
+
+    </div>
+  </div>
+</div>
+
+</div>
+        </div>
+ </section>
+
+
+{% include 'includes/footer.html' %}
+{% endblock body %}
